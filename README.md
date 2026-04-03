@@ -4,5 +4,5 @@ Author : bandoidiamond
 
 403 bypasser
 
-This is version 0.1 of GrandEvasion.
+This is version 0.2 of GrandEvasion.
 Thank you!

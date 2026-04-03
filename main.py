@@ -66,7 +66,7 @@ urlListBuilder = [
     
 for elt in urlListBuilder:
     cmd = ["curl", "-X", "GET", elt]
-        
+         
     for key, value in headers:
         cmd.extend(["-H", f"{key}: {value}"])
         
