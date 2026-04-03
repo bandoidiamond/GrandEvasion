@@ -1,0 +1,290 @@
+Test: X-Rewrite-URL
+URL: https://billbaren.com
+HTTP Code: 200
+Extra Headers: [('X-Rewrite-URL', '/ps/')]
+================================================================================
+
+CURL COMMAND:
+curl -X GET https://billbaren.com -H User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 -H Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7 -H Accept-Encoding: gzip, deflate, br -H DNT: 1 -H Connection: keep-alive -H Upgrade-Insecure-Requests: 1 -H Sec-Fetch-Dest: document -H Sec-Fetch-Mode: navigate -H Sec-Fetch-User: ?1 -H Cache-Control: max-age=0 -H sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122" -H sec-ch-ua-mobile: ?0 -H sec-ch-ua-platform: "Windows" -H X-Rewrite-URL: /ps/ --compressed -L -s -i -w 
+HTTP_CODE:%{http_code}
+
+
+================================================================================
+
+RESPONSE:
+HTTP/1.1 200 OK
+Date: Fri, 03 Apr 2026 20:20:41 GMT
+Server: nginx/1.25.5
+Content-Type: text/html; charset=UTF-8
+Content-Length: 12639
+Link: <https://billbaren.com/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+X-Server-Cache: false
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>                <script>
+                    console.log('The plugin has found no PopUp for this page. If this page should have one, check your setup as verification has failed. (Ignore if using shortcode only)');
+                    var popup_domination_admin_ajax = 'https://billbaren.com/live/wp-admin/admin-ajax.php', popup_domination = {"conversionpage":"","campaign":""}, popup_non = 'true';
+                </script>
+                
+	<!-- This site is optimized with the Yoast SEO plugin v15.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Bill Baren.com - The Art &amp; Science Of Conscious Success</title>
+	<meta name="description" content="The Art &amp; Science Of Conscious Success" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://billbaren.com/" />
+	<link rel="next" href="https://billbaren.com/page/2/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Bill Baren.com - The Art &amp; Science Of Conscious Success" />
+	<meta property="og:description" content="The Art &amp; Science Of Conscious Success" />
+	<meta property="og:url" content="https://billbaren.com/" />
+	<meta property="og:site_name" content="Bill Baren.com" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://billbaren.com/#website","url":"https://billbaren.com/","name":"Bill Baren.com","description":"The Art &amp; Science Of Conscious Success","potentialAction":[{"@type":"SearchAction","target":"https://billbaren.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://billbaren.com/#webpage","url":"https://billbaren.com/","name":"Bill Baren.com - The Art &amp; Science Of Conscious Success","isPartOf":{"@id":"https://billbaren.com/#website"},"description":"The Art &amp; Science Of Conscious Success","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://billbaren.com/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Bill Baren.com &raquo; Feed" href="https://billbaren.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bill Baren.com &raquo; Comments Feed" href="https://billbaren.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/billbaren.com\/live\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.18"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='quattro-theme-css'  href='https://billbaren.com/live/wp-content/themes/quattro/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://billbaren.com/live/wp-includes/css/dist/block-library/style.min.css?ver=5.5.18' type='text/css' media='all' />
+<link rel='stylesheet' id='widgets-on-pages-css'  href='https://billbaren.com/live/wp-content/plugins/widgets-on-pages/public/css/widgets-on-pages-public.css?ver=1.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='prefix-style-css'  href='https://billbaren.com/live/wp-content/plugins/simple-social-expandable/see_style.css?ver=5.5.18' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='https://billbaren.com/live/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Quattrocento%7CQuattrocento+Sans&#038;ver=2.10.1' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-social-icons-font-css'  href='https://billbaren.com/live/wp-content/plugins/simple-social-icons/css/style.css?ver=3.0.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://billbaren.com/live/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/plugins/popup-domination/js/load_lightbox.js?ver=3.10.3' id='popup_domination_lightbox-js'></script>
+<script type='application/json' id='wpp-json'>
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/billbaren.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":0,"token":"a1d17cfb71","lang":0,"debug":0}
+</script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.2.4' id='wpp-js-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3' id='html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/themes/quattro/js/sticky-message.js?ver=1.0.0' id='mobile-first-stickey-message-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/plugins/simple-social-icons/svgxuse.js?ver=1.1.21' id='svg-x-use-js'></script>
+<link rel="https://api.w.org/" href="https://billbaren.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://billbaren.com/live/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://billbaren.com/live/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.18" />
+		<style>
+		.border-round { float:; }
+		.btnToggleminus {
+			background: url("https://billbaren.com/live/wp-content/plugins/simple-social-expandable/minus.png") no-repeat !important;
+			padding-left:16px;
+		}
+		.btnToggleplus {
+			background: url("https://billbaren.com/live/wp-content/plugins/simple-social-expandable/plus.png") no-repeat;
+			padding-left:16px;
+		}
+		</style>
+		<link rel="icon" href="https://billbaren.com/live/wp-content/themes/quattro/images/favicon.ico" />
+<link rel="pingback" href="https://billbaren.com/live/xmlrpc.php" />
+<link rel="icon" href="https://billbaren.com/live/wp-content/uploads/2018/10/tbs_favicon.png" />
+<meta property="fb:admins" content="100001458092430" />
+<!-- START Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69954813-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- END Google Analytics -->
+
+
+<!--- Facebook Retargeting Pixel -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1619916844910317']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1619916844910317&amp;ev=PixelInitialized" /></noscript>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://billbaren.com/live/wp-content/uploads/2015/06/bg-red.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	</head>
+<body class="home blog custom-background header-image header-full-width content-sidebar"><div id="wrap"><div class="inner"><div id="header"><div class="wrap"><div id="title-area"><h1 id="title"><a href="https://billbaren.com/">Bill Baren.com</a></h1><p id="description">The Art &amp; Science Of Conscious Success</p></div><div class="home-header"><img src="https://billbaren.com/live/wp-content/uploads/2018/10/UpdatedReskinHeader.jpg" alt="home header image" /></div></div></div><div id="nav"><div class="wrap"><ul id="menu-main" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-176"><a href="http://billbaren.com" aria-current="page">Home</a></li>
+<li id="menu-item-379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379"><a href="https://billbaren.com/about-us/">About Us</a></li>
+<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"><a href="https://billbaren.com/success-stories/">Success Stories</a></li>
+<li id="menu-item-3157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3157"><a href="http://billbaren.com/category/podcast/">Podcast</a></li>
+</ul></div></div><div id="inner"><div class="wrap"><div class="welcome-text widget-area"><div id="text-17" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">WELCOME TO THE BIG SHIFT PODCAST!</h4>
+			<div class="textwidget"><img src="https://s3.amazonaws.com/wp_billbaren.com/images/bigshift+podcast.jpg"  style="float: left; clear: left; margin: 0 20px 20px 0; width: 350px; "/></div>
+
+<p style="font-size: 14px; margin-bottom: 10px;">The Big Shift is a podcast, a community, and a movement.  It is our aim to help those who want to make a difference, have success in carrying out their mission.  The goal of our podcast is to inspire heart-centered entrepreneurs to create their dream business, do what they love, and make the world a better place in the process.</p>
+<p style="font-size: 14px;">We will help you get there by sharing with you the best marketing, sales/enrollment and mindset practices known to humankind todayâ€¦  All of these practices are tested and come from the people who are the very best at utilizing and teaching them.  These will be some of the most extraordinary people on this planet.  Get ready for your Big Shift!</p>
+<br/>
+<div style="width: 100%; text-align: center;">
+<p style="color: #8e2708; text-align: center;" ><b>To subscribe to the podcast & leave a review, click the button below:</b></p>
+<a href="https://itunes.apple.com/us/podcast/big-shift-business-making/id977754152?mt=2&ls=1" target="_blank" rel="noopener noreferrer"><img src="https://s3.amazonaws.com/wp_billbaren.com/images/subscribe-iTunes.png" style="width: 480px;"/> </a>
+</div>
+<p>&nbsp;</p>
+</div>
+		</div></div></div><div id="content-sidebar-wrap">
+<div id="text-27" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"></div>
+		</div></div>
+<div id="content" class="hfeed"><div class="post-6880 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-feature genesis-feature-1 genesis-feature-odd"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/unleash-your-alter-ego-and-transform-your-business-and-your-life-ep-160/">Unleash Your Alter Ego And Transform Your Business (And Your Life!) | Ep. 160</a></h2>
+<div class="post-info"><span class="date published time" title="2020-04-27T03:00:23-07:00">April 27</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/unleash-your-alter-ego-and-transform-your-business-and-your-life-ep-160/#respond">Leave a Comment</a></span> </div><div class="entry-content"><p><a href="//billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155" target="_blank" rel="noopener noreferrer"><img style="width: 100%;" src="https://billbaren.com/live/wp-content/uploads/2020/03/Todd-Herman-Graphic.jpg" alt=""/></a></p>
+<p>What do Superman, Lady Gaga, Garth Brooks, and Beyonce all have in common?</p>
+<p><a class="more-link" href="https://billbaren.com/unleash-your-alter-ego-and-transform-your-business-and-your-life-ep-160/">Read More</a></p>
+</div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="post-6889 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-feature genesis-feature-2 genesis-feature-even"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/how-to-avoid-the-shoulda-coulda-wouldas-and-discover-your-unique-gifts-ep-159/">How To Avoid The â€˜Shoulda, Coulda, Wouldasâ€™ And Discover Your Unique Gifts| Ep. 159</a></h2>
+<div class="post-info"><span class="date published time" title="2020-04-13T10:30:28-07:00">April 13</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/how-to-avoid-the-shoulda-coulda-wouldas-and-discover-your-unique-gifts-ep-159/#respond">Leave a Comment</a></span> </div><div class="entry-content"><p><a href="//billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155" target="_blank" rel="noopener noreferrer"><img style="width: 100%;" src="https://billbaren.com/live/wp-content/uploads/2020/04/Lisa-Sasevich_new.jpg" alt=""/></a></p>
+<p>We all have unique gifts that we can offer to the world. But for some of us, discovering those gifts can be challenging.</p>
+<p><a class="more-link" href="https://billbaren.com/how-to-avoid-the-shoulda-coulda-wouldas-and-discover-your-unique-gifts-ep-159/">Read More</a></p>
+</div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="post-6868 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-grid genesis-grid-1 genesis-grid-odd"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/is-standing-out-on-social-media-really-the-way-to-go-ep-158/">Is Standing Out On Social Media Really The Way To Go? | Ep. 158</a></h2>
+<div class="post-info"><span class="date published time" title="2020-03-06T03:00:23-08:00">March 6</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/is-standing-out-on-social-media-really-the-way-to-go-ep-158/#respond">Leave a Comment</a></span> </div><div class="entry-content"><a href="https://billbaren.com/is-standing-out-on-social-media-really-the-way-to-go-ep-158/"><img width="720" height="375" src="https://billbaren.com/live/wp-content/uploads/2020/03/Ep-158-Is-Standing-Out-On-Social-Media-Really-The-Way-To-Go-FINAL-IMAGE.jpg" class="alignnone" alt="" loading="lazy" itemprop="image" srcset="https://billbaren.com/live/wp-content/uploads/2020/03/Ep-158-Is-Standing-Out-On-Social-Media-Really-The-Way-To-Go-FINAL-IMAGE.jpg 720w, https://billbaren.com/live/wp-content/uploads/2020/03/Ep-158-Is-Standing-Out-On-Social-Media-Really-The-Way-To-Go-FINAL-IMAGE-300x156.jpg 300w" sizes="(max-width: 720px) 100vw, 720px" /></a><p>As business owners in the digital age, weâ€™ve been taught that a social media presence is critical to having success. And weâ€™ve been taught that standing out amongst the sea of profiles and posts is essential in a social media marketing strategy.
+
+But &#x02026; <a href="https://billbaren.com/is-standing-out-on-social-media-really-the-way-to-go-ep-158/" class="more-link">Read More</a></p></div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="post-6850 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-grid genesis-grid-2 genesis-grid-even"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/what-to-do-when-things-fall-apart-ep-157/">What To Do When Things Fall Apart | Ep. 157</a></h2>
+<div class="post-info"><span class="date published time" title="2020-02-17T03:00:05-08:00">February 17</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/what-to-do-when-things-fall-apart-ep-157/#respond">Leave a Comment</a></span> </div><div class="entry-content"><a href="https://billbaren.com/what-to-do-when-things-fall-apart-ep-157/"><img width="720" height="375" src="https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_when-things-fall-apart.jpg" class="alignnone" alt="" loading="lazy" itemprop="image" srcset="https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_when-things-fall-apart.jpg 720w, https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_when-things-fall-apart-300x156.jpg 300w" sizes="(max-width: 720px) 100vw, 720px" /></a><p>Whenever I find myself in a new environment (physical or emotional), I often feel lost and uncomfortable. &#x02026; <a href="https://billbaren.com/what-to-do-when-things-fall-apart-ep-157/" class="more-link">Read More</a></p></div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="post-6846 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-grid genesis-grid-3 genesis-grid-odd"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/lessons-from-the-kobe-bryant-tragedy-ep-156/">Lessons from the Kobe Bryant Tragedy | Ep. 156</a></h2>
+<div class="post-info"><span class="date published time" title="2020-02-10T12:00:09-08:00">February 10</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/lessons-from-the-kobe-bryant-tragedy-ep-156/#comments">2 Comments</a></span> </div><div class="entry-content"><a href="https://billbaren.com/lessons-from-the-kobe-bryant-tragedy-ep-156/"><img width="720" height="375" src="https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_Kobe-Bryant-Tragedy.jpg" class="alignnone" alt="" loading="lazy" itemprop="image" srcset="https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_Kobe-Bryant-Tragedy.jpg 720w, https://billbaren.com/live/wp-content/uploads/2020/02/Karen-Kenney-_Kobe-Bryant-Tragedy-300x156.jpg 300w" sizes="(max-width: 720px) 100vw, 720px" /></a><p>When it comes to death there is one thing I know for sure: itâ€™s inevitable. &#x02026; <a href="https://billbaren.com/lessons-from-the-kobe-bryant-tragedy-ep-156/" class="more-link">Read More</a></p></div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="post-6822 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-podcast entry genesis-grid genesis-grid-4 genesis-grid-even"><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155/">How To Grow Your Business Using Online Challenges| Ep. 155</a></h2>
+<div class="post-info"><span class="date published time" title="2019-09-30T03:00:24-07:00">September 30</span>  by <span class="author vcard"><span class="fn"><a href="https://billbaren.com/author/bill-baren/" rel="author">Bill Baren</a></span></span> <span class="post-comments"><a href="https://billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155/#respond">Leave a Comment</a></span> </div><div class="entry-content"><a href="https://billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155/"><img width="720" height="375" src="https://billbaren.com/live/wp-content/uploads/2019/09/Podcast-Guest-Natasha-Haslett.jpg" class="alignnone" alt="" loading="lazy" itemprop="image" srcset="https://billbaren.com/live/wp-content/uploads/2019/09/Podcast-Guest-Natasha-Haslett.jpg 720w, https://billbaren.com/live/wp-content/uploads/2019/09/Podcast-Guest-Natasha-Haslett-300x156.jpg 300w" sizes="(max-width: 720px) 100vw, 720px" /></a><p>If youâ€™re struggling to grow your business, how do you know what to focus on when it feels like youâ€™ve hit rock bottom? &#x02026; <a href="https://billbaren.com/how-to-grow-your-business-using-online-challenges-ep-155/" class="more-link">Read More</a></p></div><div class="post-meta"><span class="categories">Filed Under: <a href="https://billbaren.com/category/business/" rel="category tag">Business</a>, <a href="https://billbaren.com/category/podcast/" rel="category tag">Podcast</a></span> </div></div><div class="navigation"><div class="pagination-next alignright"><a href="https://billbaren.com/page/2/" >Next Page &#x000BB;</a></div></div></div><div id="sidebar" class="sidebar widget-area"><div id="text-18" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Like Us on Facebook</h4>
+			<div class="textwidget"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FBillBarenCoaching&amp;width=277&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=259483214235361" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:290px;" allowtransparency="true"></iframe>
+â€ƒ
+</div>
+		</div></div>
+<div id="text-3" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Bill&#8217;s Favorites</h4>
+			<div class="textwidget"><ul>
+	<li><a title="Why I Never Charge What Iâ€™m Worth | Ep. 141" href="/why-i-never-charge-what-im-worth-ep-141/">Why I Never Charge What Iâ€™m Worth | Ep. 141</a></li>
+	<li><a title="The Secret Sauce for attracting your ideal clients" href="/the-secret-sauce-for-attracting-your-ideal-clients">The Secret Sauce for attracting your ideal clients</a></li>
+	<li><a title="Just me being personal" href="/just-me-being-personal">Just me being personal</a></li>
+	<li><a title="Conquer a Daunting Project In 30 Minutes Or Less" href="/conquer-a-daunting-project-in-30-minutes-or-less">Conquer a Daunting Project In 30 Minutes Or Less</a></li>
+</ul></div>
+		</div></div>
+
+<div id="wpp-3" class="widget popular-posts"><div class="widget-wrap">
+<h4 class="widget-title widgettitle">Top 10 Posts</h4>
+<!-- cached -->
+<!-- WordPress Popular Posts -->
+
+<ul class="wpp-list">
+<li>
+<a href="https://billbaren.com/my-magical-wedding-pictures-inside/" class="wpp-post-title" target="_self">My magical wedding (pictures inside)</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">243 comments</span> | <span class="wpp-views">29k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/my-guide-to-setting-a-powerful-intention-for-2017/" class="wpp-post-title" target="_self">My guide to setting a powerful intention for 2017</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">115 comments</span> | <span class="wpp-views">3.8k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/7-books-that-will-transform-your-business-and-life/" class="wpp-post-title" target="_self">7 Books That Will Transform Your Business (and Life)</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">89 comments</span> | <span class="wpp-views">13.1k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/how-to-turn-any-challenge-or-slum-into-success/" class="wpp-post-title" target="_self">How to Turn Any Challenge or Slump into Success</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">89 comments</span> | <span class="wpp-views">9.7k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/5-simple-ways-to-get-more-people-to-read-your-emails/" class="wpp-post-title" target="_self">5 Simple Ways to Get More People to Read Your Emails</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">86 comments</span> | <span class="wpp-views">13k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/riskiest-post-ive-ever-written/" class="wpp-post-title" target="_self">Riskiest post I&#8217;ve ever written</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">85 comments</span> | <span class="wpp-views">3.8k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/top-4-ways-to-stay-in-business-long-enough-to-succeed/" class="wpp-post-title" target="_self">Top 4 Ways to Stay in Business Long Enough to Succeed</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">81 comments</span> | <span class="wpp-views">9.1k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/what-do-you-do-when-someone-asks-for-a-discount/" class="wpp-post-title" target="_self">What Do You Do When Someone Asks You For A Discount?</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">80 comments</span> | <span class="wpp-views">13.1k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/5-deepest-learnings-from-my-biggest-launch-ever/" class="wpp-post-title" target="_self">5 Deepest Learnings from my Biggest Launch Ever</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">75 comments</span> | <span class="wpp-views">5.1k views</span></span>
+</li>
+<li>
+<a href="https://billbaren.com/just-me-being-personal/" class="wpp-post-title" target="_self">Just me being personal</a>
+ <span class="wpp-meta post-stats"><span class="wpp-comments">53 comments</span> | <span class="wpp-views">4.5k views</span></span>
+</li>
+</ul>
+
+</div></div>
+
+<div id="search-2" class="widget widget_search"><div class="widget-wrap"><form method="get" class="searchform search-form" action="https://billbaren.com/" role="search" ><input type="text" value="Search this website &#x02026;" name="s" class="s search-input" onfocus="if ('Search this website &#x2026;' === this.value) {this.value = '';}" onblur="if ('' === this.value) {this.value = 'Search this website &#x2026;';}" /><input type="submit" class="searchsubmit search-submit" value="Search" /></form></div></div>
+<div id="simple-social-icons-3" class="widget simple-social-icons"><div class="widget-wrap"><ul class="alignleft"><li class="ssi-facebook"><a href="http://www.Facebook.com/BillBarenCoaching" ><svg role="img" class="social-facebook" aria-labelledby="social-facebook-3"><title id="social-facebook-3">Facebook</title><use xlink:href="https://billbaren.com/live/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-gplus"><a href="https://plus.google.com/113485456792115192607/posts" ><svg role="img" class="social-gplus" aria-labelledby="social-gplus-3"><title id="social-gplus-3">Google+</title><use xlink:href="https://billbaren.com/live/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-gplus"></use></svg></a></li><li class="ssi-linkedin"><a href="http://www.linkedin.com/profile/view?id=5145&#038;authType=NAME_SEARCH&#038;authToken=6xdg&#038;locale=en_US&#038;srchid=9ab2bb84-c534-4fd3-94e6-c055b20911db-0&#038;srchindex=1&#038;srchtotal=6&#038;goback=%2Efps_PBCK_*1_Bill_Baren_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&#038;pvs=ps&#038;trk=pp_profile_name_link" ><svg role="img" class="social-linkedin" aria-labelledby="social-linkedin-3"><title id="social-linkedin-3">LinkedIn</title><use xlink:href="https://billbaren.com/live/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-linkedin"></use></svg></a></li><li class="ssi-twitter"><a href="https://twitter.com/billbaren" ><svg role="img" class="social-twitter" aria-labelledby="social-twitter-3"><title id="social-twitter-3">Twitter</title><use xlink:href="https://billbaren.com/live/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-twitter"></use></svg></a></li><li class="ssi-youtube"><a href="http://www.youtube.com/user/billbaren" ><svg role="img" class="social-youtube" aria-labelledby="social-youtube-3"><title id="social-youtube-3">YouTube</title><use xlink:href="https://billbaren.com/live/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-youtube"></use></svg></a></li></ul></div></div>
+</div></div></div></div><div id="footer" class="footer"><div class="wrap">    <div class="footer-top-container">
+    	 
+		    	 
+		    </div><!-- #footer-top-container -->
+    <div class="footer-bottom-container">
+    	<li id="text-9" class="widget widget_text">			<div class="textwidget"><img src="https://s3-us-west-1.amazonaws.com/bigshiftbusiness/ebook+funnel/tbs_bsb_logo_stacked_darkbg.svg" /> </div>
+		</li>
+		<div style="font-size: 0.8em;">
+	    	<li id="text-10" class="widget widget_text">			<div class="textwidget"><ul class="footer-menu">
+	<li><a href="http://billbaren.com/terms-conditions/" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
+	<li><a href="https://thebigshift.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+	<li><a href="//billbaren.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+</ul>
+<p>Â© The Big Shift</p></div>
+		</li>
+		</div>
+    </div>
+    </div></div></div></div><!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1070396161;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070396161/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+<style type="text/css" media="screen"> #simple-social-icons-3 ul li a, #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #eb6200 !important; border-radius: 3px; color: #ffffff !important; border: 0px #eb6200 solid !important; font-size: 16px; padding: 8px; }  #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #fffff1 !important; border-color: #eb6200 !important; color: #eb6200 !important; }  #simple-social-icons-3 ul li a:focus { outline: 1px dotted #fffff1 !important; }</style><script type='text/javascript' src='https://billbaren.com/live/wp-includes/js/hoverIntent.min.js?ver=1.8.1' id='hoverIntent-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10' id='superfish-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=2.10.1' id='superfish-args-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-content/themes/genesis/lib/js/menu/superfish.compat.min.js?ver=2.10.1' id='superfish-compat-js'></script>
+<script type='text/javascript' src='https://billbaren.com/live/wp-includes/js/wp-embed.min.js?ver=5.5.18' id='wp-embed-js'></script>
+</body></html>
+
+HTTP_CODE:200
