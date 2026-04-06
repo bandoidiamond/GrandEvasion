@@ -1,8 +1,8 @@
 # GrandEvasion
-Version 0.2
+Version 0.3
 Author : bandoidiamond
 
 403 bypasser
 
-This is version 0.2 of GrandEvasion.
+This is version 0.3 of GrandEvasion.
 Thank you!
